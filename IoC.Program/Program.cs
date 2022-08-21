@@ -13,8 +13,8 @@ namespace Ioc.Program
             //Register IConsoleProvider as HelloWorldConsoleProvider
             container.Register<IConsoleProvider, HelloWorldConsoleProvider>();
 
-            var GoodMoringConsole = container.Resolve<ConsoleRepository>();
-            ((ConsoleRepository)GoodMoringConsole).PrintOutput();
+            var HelloWorldConsole = container.Resolve<ConsoleRepository>();
+            ((ConsoleRepository)HelloWorldConsole).PrintOutput();
         }
     }
 }
